@@ -128,6 +128,16 @@ df.isnull().sum()
 
 ## 📧 Email Format
 
+Your task is to build a Sales Analysis Email Agent that:
+
+1. Reads data from the provided SQLite . db file
+
+2. Performs sales analytics
+
+3. Generates a PDF report with charts
+
+4. Sends an email summary + PDF attachment in the required format.
+
 ### Subject
 ```
 Database Analysis Report - [Your Team Name]
@@ -149,7 +159,7 @@ Please find the automated database analysis report below.
 2. [Insight 2]
 3. [Insight 3]
 
-=== VISUALIZATIONS ===
+ PDF( report with charts  Proffesional  business report with visualization and chart ) 
 [Attached: chart1.png, chart2.png, chart3.png]
 
 Best regards,

@@ -1,6 +1,6 @@
 {
   "team_id": "team_01",
-  "seed": 12345,
+  "seed": 9,
   "grid_config": {
     "traffic_lights": 4,
     "cows": 3,

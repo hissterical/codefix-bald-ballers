@@ -20,7 +20,7 @@ You are required to implement an **A\* pathfinding algorithm** for a Bangalore-t
 
 | Element | Percept | Effect |cost|
 |---------|---------|--------|------------|
-| **Traffic Light** | Adjacent cells detect "light" indicator | Wait cost → passable but slower   |5|
+| **Traffic Light** | Adjacent cells detect "light" indicator | Wait cost → passable but slower   |20|
 | **Cow** | Adjacent cells detect "moo" sound | Adjacent cell has cow →If  mark as forbidden → return to start → re-compute A* |10|
 | **Pit** | Adjacent cells detect "breeze" | **Game Over** if entered, Adjacent cells are risky → high cost, avoid unless necessary|infinite|
 | **Goal** | No percept | **Win** if reached |-|
@@ -32,7 +32,7 @@ You are required to implement an **A\* pathfinding algorithm** for a Bangalore-t
 The starter code (`wumpus_world.py`) provides:
 
 - ✅ Pygame visualization of 5×10 grid
-- ✅ Randomized weights of each grid (0-100)
+- ✅ Randomized weights of each grid 
 - ✅ Random world generation (using your team's unique seed)
 - ✅ Percept detection system (breeze, moo, light)
 - ✅ Traffic light delay mechanism (nested loop)
@@ -86,9 +86,9 @@ def get_cell_cost(x, y):
     if cell_type == 'pit':
         return float('inf')        # avoid pits completely
     elif cell_type == 'traffic_light':
-        return 5                   # fixed cost
+        return 20                  
     elif cell_type == 'cow':
-        return 10                  # fixed cost
+        return 10                  
     else:
         return self.grid[y][x]['weight']  # random cost ONLY for normal cells
 

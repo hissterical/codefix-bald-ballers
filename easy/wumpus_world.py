@@ -4,6 +4,7 @@ import random
 import sys
 from collections import deque
 
+
 # Initialize Pygame
 pygame.init()
 
@@ -44,7 +45,7 @@ class BangaloreWumpusWorld:
         random.seed(self.seed)
 
         # Initialize grid
-        self.grid = [[{'type': 'empty', 'percepts': [], 'weight': random.randint(0, 100)}
+        self.grid = [[{'type': 'empty', 'percepts': [], 'weight': random.randint(1,15)}
               for _ in range(GRID_COLS)] for _ in range(GRID_ROWS)]
 
 

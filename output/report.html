@@ -1,0 +1,979 @@
+<html><head><meta charset="utf-8"><title>Database Analysis Report</title></head><body>
+<h1>Database Analysis Report</h1>
+<p><strong>DB file:</strong> medium/sales_agent.db<br/><strong>Analysis Date:</strong> 2025-11-27 10:19 UTC</p>
+<h2>Database Summary</h2>
+<ul><li>Total Tables: 18</li><li>Total Records: 1427770</li></ul>
+<h2>Key Insights</h2>
+<ol>
+<li>Largest table: "dbo_F_AR_Detail" with 520089 rows</li>
+<li>Column with most nulls: Posting Time in table "dbo_F_Sales_Transaction" (81423 nulls)</li>
+<li>General: Data appears consistent; consider deeper domain-specific checks.</li>
+</ol>
+<h2>Per-table Overview</h2>
+<h3>"dbo_D_Customer" (2632 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Number</td><td>float64</td><td>1</td></tr>
+<tr><td>Bill-to Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Default Customer Ship-to Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Status</td><td>object</td><td>2632</td></tr>
+<tr><td>Origin Date</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Address 1</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Address 2</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Address 3</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer City</td><td>object</td><td>1</td></tr>
+<tr><td>Customer State/Prov Code</td><td>object</td><td>13</td></tr>
+<tr><td>Customer State/Prov</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Postal Code</td><td>object</td><td>871</td></tr>
+<tr><td>Customer Country Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Country</td><td>object</td><td>1</td></tr>
+<tr><td>Bill-to Customer Number</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Type Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Type Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy Code</td><td>object</td><td>1</td></tr>
+<tr><td>Market Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Market Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Industry Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Industry Desc</td><td>object</td><td>2632</td></tr>
+<tr><td>Salesperson Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Salesperson Name</td><td>object</td><td>1</td></tr>
+<tr><td>Responsibility Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Responsibility Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Sales Territory Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Sales Territory</td><td>object</td><td>2632</td></tr>
+<tr><td>Payment Terms Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Payment Terms</td><td>object</td><td>2632</td></tr>
+<tr><td>Payment Terms Group</td><td>object</td><td>2632</td></tr>
+<tr><td>Price Group Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Price Group</td><td>object</td><td>2632</td></tr>
+<tr><td>Discount Group Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Discount Group</td><td>object</td><td>2632</td></tr>
+<tr><td>Business Posting Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Business Posting Desc</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Posting Desc</td><td>object</td><td>2632</td></tr>
+<tr><td>Credit Status</td><td>object</td><td>2632</td></tr>
+<tr><td>Credit Limit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Attribute 1 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 1 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 2 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 2 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 3 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 3 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 4 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 4 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 5 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 5 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Loyalty Status</td><td>object</td><td>1</td></tr>
+<tr><td>Year Acquired</td><td>float64</td><td>145</td></tr>
+<tr><td>High Volume Customer Count</td><td>int64</td><td>0</td></tr>
+<tr><td>Recency Band</td><td>object</td><td>2632</td></tr>
+<tr><td>Recency Band Sort</td><td>object</td><td>2632</td></tr>
+<tr><td>Frequency Band</td><td>object</td><td>2632</td></tr>
+<tr><td>Frequency Band Sort</td><td>object</td><td>2632</td></tr>
+<tr><td>Monetary Band</td><td>object</td><td>1</td></tr>
+<tr><td>Monetary Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Relationship Length Band</td><td>object</td><td>1</td></tr>
+<tr><td>Relationship Length Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Loyalty Rule Key</td><td>float64</td><td>1</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_D_Customer_Category_Hierarchy" (19 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy L1 Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy L1 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy L2 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L2 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L3 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L3 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L4 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L4 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L5 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L5 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_D_Customer_Geography_Hierarchy" (99 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L1 Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L1 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L2 Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L2 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L3 Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L3 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L4 Code</td><td>object</td><td>99</td></tr>
+<tr><td>Customer Geography Hrchy L4 Name</td><td>object</td><td>99</td></tr>
+<tr><td>Customer Geography Hrchy L5 Code</td><td>object</td><td>99</td></tr>
+<tr><td>Customer Geography Hrchy L5 Name</td><td>object</td><td>99</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_D_Item" (463 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Type</td><td>object</td><td>1</td></tr>
+<tr><td>Item Number</td><td>object</td><td>1</td></tr>
+<tr><td>Buyer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Manufacturer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Purchaser Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Vendor Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Item Status</td><td>object</td><td>463</td></tr>
+<tr><td>Origin Date</td><td>object</td><td>0</td></tr>
+<tr><td>Item Type Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Type Desc</td><td>object</td><td>463</td></tr>
+<tr><td>Item Category Hrchy Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Category Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Item Category Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Item Subcategory Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Subcategory Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Vendor Number</td><td>object</td><td>463</td></tr>
+<tr><td>Vendor Item Number</td><td>object</td><td>463</td></tr>
+<tr><td>Manufacturer Number</td><td>object</td><td>463</td></tr>
+<tr><td>Purchaser Code</td><td>object</td><td>463</td></tr>
+<tr><td>Buyer Code</td><td>object</td><td>463</td></tr>
+<tr><td>Planner Code</td><td>object</td><td>1</td></tr>
+<tr><td>Planner Name</td><td>object</td><td>1</td></tr>
+<tr><td>ABC Code</td><td>object</td><td>463</td></tr>
+<tr><td>Inventory Posting Code</td><td>object</td><td>463</td></tr>
+<tr><td>Inventory Posting Desc</td><td>object</td><td>463</td></tr>
+<tr><td>Discount Code</td><td>object</td><td>463</td></tr>
+<tr><td>Discount Desc</td><td>object</td><td>463</td></tr>
+<tr><td>Unit of Measure</td><td>object</td><td>1</td></tr>
+<tr><td>Purch Unit of Measure</td><td>object</td><td>463</td></tr>
+<tr><td>Sales Unit of Measure</td><td>object</td><td>463</td></tr>
+<tr><td>Unit Price</td><td>float64</td><td>0</td></tr>
+<tr><td>Unit Cost</td><td>float64</td><td>0</td></tr>
+<tr><td>Standard Unit Cost</td><td>float64</td><td>462</td></tr>
+<tr><td>Last Unit Cost</td><td>float64</td><td>462</td></tr>
+<tr><td>Gross Weight</td><td>float64</td><td>0</td></tr>
+<tr><td>Replenishment Method</td><td>object</td><td>463</td></tr>
+<tr><td>Reorder Point</td><td>float64</td><td>462</td></tr>
+<tr><td>Reorder Quantity</td><td>float64</td><td>462</td></tr>
+<tr><td>Safety Stock Quantity</td><td>float64</td><td>462</td></tr>
+<tr><td>Purch Lead Time</td><td>float64</td><td>462</td></tr>
+<tr><td>Mfg Lead Time</td><td>float64</td><td>462</td></tr>
+<tr><td>New Item Count</td><td>int64</td><td>0</td></tr>
+<tr><td>Attribute 1 Code</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 1 Name</td><td>object</td><td>259</td></tr>
+<tr><td>Attribute 2 Code</td><td>object</td><td>160</td></tr>
+<tr><td>Attribute 2 Name</td><td>object</td><td>160</td></tr>
+<tr><td>Attribute 3 Code</td><td>object</td><td>73</td></tr>
+<tr><td>Attribute 3 Name</td><td>object</td><td>73</td></tr>
+<tr><td>Attribute 4 Code</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 4 Name</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 5 Code</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 5 Name</td><td>object</td><td>463</td></tr>
+<tr><td>Purch Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Inv Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_D_Sales_Organization" (21 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Salesperson Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Salesperson Name</td><td>object</td><td>1</td></tr>
+<tr><td>Sales Org Hrchy L1 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Sales Org Hrchy L2 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Sales Org Hrchy L3 Name</td><td>object</td><td>21</td></tr>
+<tr><td>Email Address</td><td>object</td><td>21</td></tr>
+<tr><td>Sales Manager Code</td><td>object</td><td>21</td></tr>
+<tr><td>Sales Manager Name</td><td>object</td><td>21</td></tr>
+<tr><td>Sales Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_F_AR_Detail" (520089 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>AR Detail Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Record Type</td><td>int64</td><td>0</td></tr>
+<tr><td>AR Detail Id</td><td>int64</td><td>0</td></tr>
+<tr><td>AR Header Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Posting Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>AR Header Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Date</td><td>object</td><td>0</td></tr>
+<tr><td>Document Source</td><td>object</td><td>9980</td></tr>
+<tr><td>Document Type</td><td>object</td><td>0</td></tr>
+<tr><td>Document Number</td><td>object</td><td>0</td></tr>
+<tr><td>Transaction Type</td><td>object</td><td>8995</td></tr>
+<tr><td>Txn Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Txn Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Debit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Credit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Age Band Days</td><td>int64</td><td>0</td></tr>
+<tr><td>Age Band</td><td>object</td><td>0</td></tr>
+<tr><td>Age Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Analytics Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 01 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 02 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 03 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 04 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 05 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 06 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 07 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 08 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 09 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 10 Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_F_Sales_Order" (80226 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Order Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Record Type</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Document</td><td>object</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Ship-to Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Variant Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Location Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Order Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Posting Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Event Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Header Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Service Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Warehouse Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Type</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Order Number</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Order Line Number</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Header Document</td><td>object</td><td>0</td></tr>
+<tr><td>Order Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Time</td><td>object</td><td>80226</td></tr>
+<tr><td>Warehouse Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Location Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Line Type</td><td>object</td><td>0</td></tr>
+<tr><td>Item Number</td><td>object</td><td>0</td></tr>
+<tr><td>Revision Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Item Variant Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Service Item Number</td><td>object</td><td>80226</td></tr>
+<tr><td>Dimension Set Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Order Status</td><td>object</td><td>0</td></tr>
+<tr><td>Customer Posting Group</td><td>object</td><td>80226</td></tr>
+<tr><td>Business Posting Group Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Business Posting Group</td><td>object</td><td>80226</td></tr>
+<tr><td>Product Posting Group Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Product Posting Group</td><td>object</td><td>80226</td></tr>
+<tr><td>Target Ship Date</td><td>object</td><td>0</td></tr>
+<tr><td>Requested Ship Date</td><td>object</td><td>80226</td></tr>
+<tr><td>Promised Ship Date</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Event Code</td><td>object</td><td>76873</td></tr>
+<tr><td>Unit of Measure</td><td>object</td><td>80226</td></tr>
+<tr><td>Order Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Order Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Order Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Order Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Order Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Order Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Cost Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Reason Code</td><td>object</td><td>52837</td></tr>
+<tr><td>Discount Reason</td><td>object</td><td>52837</td></tr>
+<tr><td>Number Order Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Return Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Excluded Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Analytics Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 01 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 02 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 03 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 04 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 05 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 06 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 07 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 08 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 09 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 10 Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>"dbo_F_Sales_Transaction" (81423 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Txn Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Record Type</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Document</td><td>object</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Ship-to Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Variant Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Location Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Posting Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Event Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Header Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Service Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Warehouse Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Type</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Txn Number</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Txn Line Number</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Header Document</td><td>object</td><td>0</td></tr>
+<tr><td>Txn Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Time</td><td>object</td><td>81423</td></tr>
+<tr><td>Warehouse Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Location Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Business Posting Group Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Business Posting Group</td><td>object</td><td>81423</td></tr>
+<tr><td>Product Posting Group Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Product Posting Group</td><td>object</td><td>81423</td></tr>
+<tr><td>Line Type</td><td>object</td><td>0</td></tr>
+<tr><td>Item Number</td><td>object</td><td>0</td></tr>
+<tr><td>Revision Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Item Variant Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Service Item Number</td><td>object</td><td>81423</td></tr>
+<tr><td>Dimension Set Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Event Code</td><td>object</td><td>78037</td></tr>
+<tr><td>Unit of Measure</td><td>object</td><td>81423</td></tr>
+<tr><td>Sales Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Sales Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Sales Order Document</td><td>object</td><td>0</td></tr>
+<tr><td>Credit Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Credit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Credit Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Reason Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Return Reason</td><td>object</td><td>79202</td></tr>
+<tr><td>Return Order Document</td><td>object</td><td>81423</td></tr>
+<tr><td>Net Sales Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Sales Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Cost Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Reason Code</td><td>object</td><td>53707</td></tr>
+<tr><td>Discount Reason</td><td>object</td><td>53707</td></tr>
+<tr><td>Other Charges Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Other Charges Amount (TCY)</td><td>object</td><td>81423</td></tr>
+<tr><td>Tax 1 Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Tax 1 Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Tax 2 Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Tax 2 Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Number Sales Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Credit Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Return Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Discount Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Excluded Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 01 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 02 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 03 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 04 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 05 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 06 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 07 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 08 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 09 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 10 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>gpb Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Return Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Net Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Cost Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Discount%</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Sales Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Net Sales Quantity</td><td>float64</td><td>0</td></tr>
+</table>
+<h3>dbo_D_Customer (2632 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Number</td><td>float64</td><td>1</td></tr>
+<tr><td>Bill-to Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Default Customer Ship-to Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Status</td><td>object</td><td>2632</td></tr>
+<tr><td>Origin Date</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Address 1</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Address 2</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Address 3</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer City</td><td>object</td><td>1</td></tr>
+<tr><td>Customer State/Prov Code</td><td>object</td><td>13</td></tr>
+<tr><td>Customer State/Prov</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Postal Code</td><td>object</td><td>871</td></tr>
+<tr><td>Customer Country Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Country</td><td>object</td><td>1</td></tr>
+<tr><td>Bill-to Customer Number</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Type Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Type Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy Code</td><td>object</td><td>1</td></tr>
+<tr><td>Market Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Market Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Industry Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Industry Desc</td><td>object</td><td>2632</td></tr>
+<tr><td>Salesperson Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Salesperson Name</td><td>object</td><td>1</td></tr>
+<tr><td>Responsibility Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Responsibility Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Sales Territory Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Sales Territory</td><td>object</td><td>2632</td></tr>
+<tr><td>Payment Terms Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Payment Terms</td><td>object</td><td>2632</td></tr>
+<tr><td>Payment Terms Group</td><td>object</td><td>2632</td></tr>
+<tr><td>Price Group Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Price Group</td><td>object</td><td>2632</td></tr>
+<tr><td>Discount Group Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Discount Group</td><td>object</td><td>2632</td></tr>
+<tr><td>Business Posting Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Business Posting Desc</td><td>object</td><td>2632</td></tr>
+<tr><td>Customer Posting Desc</td><td>object</td><td>2632</td></tr>
+<tr><td>Credit Status</td><td>object</td><td>2632</td></tr>
+<tr><td>Credit Limit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Attribute 1 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 1 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 2 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 2 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 3 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 3 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 4 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 4 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 5 Code</td><td>object</td><td>2632</td></tr>
+<tr><td>Attribute 5 Name</td><td>object</td><td>2632</td></tr>
+<tr><td>Loyalty Status</td><td>object</td><td>1</td></tr>
+<tr><td>Year Acquired</td><td>float64</td><td>145</td></tr>
+<tr><td>High Volume Customer Count</td><td>int64</td><td>0</td></tr>
+<tr><td>Recency Band</td><td>object</td><td>2632</td></tr>
+<tr><td>Recency Band Sort</td><td>object</td><td>2632</td></tr>
+<tr><td>Frequency Band</td><td>object</td><td>2632</td></tr>
+<tr><td>Frequency Band Sort</td><td>object</td><td>2632</td></tr>
+<tr><td>Monetary Band</td><td>object</td><td>1</td></tr>
+<tr><td>Monetary Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Relationship Length Band</td><td>object</td><td>1</td></tr>
+<tr><td>Relationship Length Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Loyalty Rule Key</td><td>float64</td><td>1</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_D_Customer_Category_Hierarchy (19 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy L1 Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy L1 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Category Hrchy L2 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L2 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L3 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L3 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L4 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L4 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L5 Code</td><td>object</td><td>19</td></tr>
+<tr><td>Customer Category Hrchy L5 Name</td><td>object</td><td>19</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_D_Customer_Geography_Hierarchy (99 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L1 Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L1 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L2 Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L2 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L3 Code</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L3 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Customer Geography Hrchy L4 Code</td><td>object</td><td>99</td></tr>
+<tr><td>Customer Geography Hrchy L4 Name</td><td>object</td><td>99</td></tr>
+<tr><td>Customer Geography Hrchy L5 Code</td><td>object</td><td>99</td></tr>
+<tr><td>Customer Geography Hrchy L5 Name</td><td>object</td><td>99</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_D_Item (463 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Type</td><td>object</td><td>1</td></tr>
+<tr><td>Item Number</td><td>object</td><td>1</td></tr>
+<tr><td>Buyer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Manufacturer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Purchaser Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Vendor Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Item Status</td><td>object</td><td>463</td></tr>
+<tr><td>Origin Date</td><td>object</td><td>0</td></tr>
+<tr><td>Item Type Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Type Desc</td><td>object</td><td>463</td></tr>
+<tr><td>Item Category Hrchy Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Category Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Item Category Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Item Subcategory Code</td><td>object</td><td>1</td></tr>
+<tr><td>Item Subcategory Desc</td><td>object</td><td>1</td></tr>
+<tr><td>Vendor Number</td><td>object</td><td>463</td></tr>
+<tr><td>Vendor Item Number</td><td>object</td><td>463</td></tr>
+<tr><td>Manufacturer Number</td><td>object</td><td>463</td></tr>
+<tr><td>Purchaser Code</td><td>object</td><td>463</td></tr>
+<tr><td>Buyer Code</td><td>object</td><td>463</td></tr>
+<tr><td>Planner Code</td><td>object</td><td>1</td></tr>
+<tr><td>Planner Name</td><td>object</td><td>1</td></tr>
+<tr><td>ABC Code</td><td>object</td><td>463</td></tr>
+<tr><td>Inventory Posting Code</td><td>object</td><td>463</td></tr>
+<tr><td>Inventory Posting Desc</td><td>object</td><td>463</td></tr>
+<tr><td>Discount Code</td><td>object</td><td>463</td></tr>
+<tr><td>Discount Desc</td><td>object</td><td>463</td></tr>
+<tr><td>Unit of Measure</td><td>object</td><td>1</td></tr>
+<tr><td>Purch Unit of Measure</td><td>object</td><td>463</td></tr>
+<tr><td>Sales Unit of Measure</td><td>object</td><td>463</td></tr>
+<tr><td>Unit Price</td><td>float64</td><td>0</td></tr>
+<tr><td>Unit Cost</td><td>float64</td><td>0</td></tr>
+<tr><td>Standard Unit Cost</td><td>float64</td><td>462</td></tr>
+<tr><td>Last Unit Cost</td><td>float64</td><td>462</td></tr>
+<tr><td>Gross Weight</td><td>float64</td><td>0</td></tr>
+<tr><td>Replenishment Method</td><td>object</td><td>463</td></tr>
+<tr><td>Reorder Point</td><td>float64</td><td>462</td></tr>
+<tr><td>Reorder Quantity</td><td>float64</td><td>462</td></tr>
+<tr><td>Safety Stock Quantity</td><td>float64</td><td>462</td></tr>
+<tr><td>Purch Lead Time</td><td>float64</td><td>462</td></tr>
+<tr><td>Mfg Lead Time</td><td>float64</td><td>462</td></tr>
+<tr><td>New Item Count</td><td>int64</td><td>0</td></tr>
+<tr><td>Attribute 1 Code</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 1 Name</td><td>object</td><td>259</td></tr>
+<tr><td>Attribute 2 Code</td><td>object</td><td>160</td></tr>
+<tr><td>Attribute 2 Name</td><td>object</td><td>160</td></tr>
+<tr><td>Attribute 3 Code</td><td>object</td><td>73</td></tr>
+<tr><td>Attribute 3 Name</td><td>object</td><td>73</td></tr>
+<tr><td>Attribute 4 Code</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 4 Name</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 5 Code</td><td>object</td><td>463</td></tr>
+<tr><td>Attribute 5 Name</td><td>object</td><td>463</td></tr>
+<tr><td>Purch Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Inv Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_D_Sales_Organization (21 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>1</td></tr>
+<tr><td>Source Code</td><td>object</td><td>1</td></tr>
+<tr><td>Salesperson Code</td><td>float64</td><td>1</td></tr>
+<tr><td>Salesperson Name</td><td>object</td><td>1</td></tr>
+<tr><td>Sales Org Hrchy L1 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Sales Org Hrchy L2 Name</td><td>object</td><td>1</td></tr>
+<tr><td>Sales Org Hrchy L3 Name</td><td>object</td><td>21</td></tr>
+<tr><td>Email Address</td><td>object</td><td>21</td></tr>
+<tr><td>Sales Manager Code</td><td>object</td><td>21</td></tr>
+<tr><td>Sales Manager Name</td><td>object</td><td>21</td></tr>
+<tr><td>Sales Activity Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_F_AR_Detail (520089 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>AR Detail Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Record Type</td><td>int64</td><td>0</td></tr>
+<tr><td>AR Detail Id</td><td>int64</td><td>0</td></tr>
+<tr><td>AR Header Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Posting Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>AR Header Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Date</td><td>object</td><td>0</td></tr>
+<tr><td>Document Source</td><td>object</td><td>9980</td></tr>
+<tr><td>Document Type</td><td>object</td><td>0</td></tr>
+<tr><td>Document Number</td><td>object</td><td>0</td></tr>
+<tr><td>Transaction Type</td><td>object</td><td>8995</td></tr>
+<tr><td>Txn Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Txn Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Debit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Credit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Age Band Days</td><td>int64</td><td>0</td></tr>
+<tr><td>Age Band</td><td>object</td><td>0</td></tr>
+<tr><td>Age Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Analytics Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 01 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 02 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 03 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 04 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 05 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 06 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 07 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 08 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 09 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 10 Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_F_Sales_Goal (26350 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Goal Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Dataset</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Goal Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Goal Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Code</td><td>object</td><td>0</td></tr>
+<tr><td>Business Unit Code</td><td>object</td><td>1332</td></tr>
+<tr><td>Facility Code</td><td>object</td><td>26350</td></tr>
+<tr><td>Salesperson Code</td><td>float64</td><td>1332</td></tr>
+<tr><td>Customer Category Hrchy Code</td><td>float64</td><td>1332</td></tr>
+<tr><td>Customer Number</td><td>object</td><td>26350</td></tr>
+<tr><td>Item Category Hrchy Code</td><td>object</td><td>0</td></tr>
+<tr><td>Line Type</td><td>object</td><td>25018</td></tr>
+<tr><td>Item Number</td><td>object</td><td>25018</td></tr>
+<tr><td>Goal Date</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Goal Quantity</td><td>float64</td><td>25018</td></tr>
+<tr><td>Sales Goal Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Profit Goal Amount</td><td>object</td><td>26350</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_F_Sales_Order (80226 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Order Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Record Type</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Document</td><td>object</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Ship-to Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Variant Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Location Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Order Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Posting Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Event Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Header Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Service Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Warehouse Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Type</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Order Number</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Order Line Number</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Order Header Document</td><td>object</td><td>0</td></tr>
+<tr><td>Order Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Time</td><td>object</td><td>80226</td></tr>
+<tr><td>Warehouse Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Location Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Line Type</td><td>object</td><td>0</td></tr>
+<tr><td>Item Number</td><td>object</td><td>0</td></tr>
+<tr><td>Revision Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Item Variant Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Service Item Number</td><td>object</td><td>80226</td></tr>
+<tr><td>Dimension Set Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Order Status</td><td>object</td><td>0</td></tr>
+<tr><td>Customer Posting Group</td><td>object</td><td>80226</td></tr>
+<tr><td>Business Posting Group Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Business Posting Group</td><td>object</td><td>80226</td></tr>
+<tr><td>Product Posting Group Code</td><td>object</td><td>80226</td></tr>
+<tr><td>Product Posting Group</td><td>object</td><td>80226</td></tr>
+<tr><td>Target Ship Date</td><td>object</td><td>0</td></tr>
+<tr><td>Requested Ship Date</td><td>object</td><td>80226</td></tr>
+<tr><td>Promised Ship Date</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Event Code</td><td>object</td><td>76873</td></tr>
+<tr><td>Unit of Measure</td><td>object</td><td>80226</td></tr>
+<tr><td>Order Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Order Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Order Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Order Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Order Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Order Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Cost Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Reason Code</td><td>object</td><td>52837</td></tr>
+<tr><td>Discount Reason</td><td>object</td><td>52837</td></tr>
+<tr><td>Number Order Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Return Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Excluded Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Analytics Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 01 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 02 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 03 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 04 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 05 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 06 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 07 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 08 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 09 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 10 Key</td><td>int64</td><td>0</td></tr>
+</table>
+<h3>dbo_F_Sales_Pipeline_Snapshot (31476 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Pipeline Snapshot Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Snapshot Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Snapshot Date</td><td>object</td><td>0</td></tr>
+<tr><td>Warehouse Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Expiration Status</td><td>object</td><td>0</td></tr>
+<tr><td>Class Band</td><td>object</td><td>0</td></tr>
+<tr><td>Class Band Sort</td><td>object</td><td>31476</td></tr>
+<tr><td>Stage Band</td><td>object</td><td>0</td></tr>
+<tr><td>Stage Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Priority Band</td><td>object</td><td>0</td></tr>
+<tr><td>Priority Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Size Band</td><td>object</td><td>0</td></tr>
+<tr><td>Size Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Probability Band</td><td>object</td><td>0</td></tr>
+<tr><td>Probability Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Expected Close Band</td><td>object</td><td>0</td></tr>
+<tr><td>Expected Close Band Sort</td><td>int64</td><td>0</td></tr>
+<tr><td>Expected Delivery Band</td><td>object</td><td>31476</td></tr>
+<tr><td>Expected Delivery Band Sort</td><td>object</td><td>31476</td></tr>
+<tr><td>Quote Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Quote Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Number Quote Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Analytics Log Key</td><td>object</td><td>31476</td></tr>
+</table>
+<h3>dbo_F_Sales_Transaction (81423 rows)</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Column</th><th>Type</th><th>Nulls</th></tr>
+<tr><td>Sales Txn Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Code</td><td>object</td><td>0</td></tr>
+<tr><td>Source Code</td><td>object</td><td>0</td></tr>
+<tr><td>Record Type</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Document</td><td>object</td><td>0</td></tr>
+<tr><td>Business Unit Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Company Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Currency Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Geography Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Customer Ship-to Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Division Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Facility Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Category Hrchy Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Item Variant Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Location Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Posting Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Event Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Header Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Service Item Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Date Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Txn Sales Organization Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Warehouse Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Type</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Txn Number</td><td>object</td><td>0</td></tr>
+<tr><td>Sales Txn Line Number</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Txn Header Document</td><td>object</td><td>0</td></tr>
+<tr><td>Txn Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Date</td><td>object</td><td>0</td></tr>
+<tr><td>Posting Time</td><td>object</td><td>81423</td></tr>
+<tr><td>Warehouse Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Location Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Business Posting Group Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Business Posting Group</td><td>object</td><td>81423</td></tr>
+<tr><td>Product Posting Group Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Product Posting Group</td><td>object</td><td>81423</td></tr>
+<tr><td>Line Type</td><td>object</td><td>0</td></tr>
+<tr><td>Item Number</td><td>object</td><td>0</td></tr>
+<tr><td>Revision Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Item Variant Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Service Item Number</td><td>object</td><td>81423</td></tr>
+<tr><td>Dimension Set Id</td><td>int64</td><td>0</td></tr>
+<tr><td>Sales Event Code</td><td>object</td><td>78037</td></tr>
+<tr><td>Unit of Measure</td><td>object</td><td>81423</td></tr>
+<tr><td>Sales Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Sales Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Sales Order Document</td><td>object</td><td>0</td></tr>
+<tr><td>Credit Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Credit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Credit Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Return Reason Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Return Reason</td><td>object</td><td>79202</td></tr>
+<tr><td>Return Order Document</td><td>object</td><td>81423</td></tr>
+<tr><td>Net Sales Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Net Sales Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Cost Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Amount (TCY)</td><td>float64</td><td>0</td></tr>
+<tr><td>Discount Reason Code</td><td>object</td><td>53707</td></tr>
+<tr><td>Discount Reason</td><td>object</td><td>53707</td></tr>
+<tr><td>Other Charges Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Other Charges Amount (TCY)</td><td>object</td><td>81423</td></tr>
+<tr><td>Tax 1 Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Tax 1 Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Tax 2 Code</td><td>object</td><td>81423</td></tr>
+<tr><td>Tax 2 Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>Number Sales Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Credit Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Return Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Number Discount Lines</td><td>int64</td><td>0</td></tr>
+<tr><td>Deleted Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Excluded Flag</td><td>int64</td><td>0</td></tr>
+<tr><td>Source Log Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 01 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 02 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 03 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 04 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 05 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 06 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 07 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 08 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 09 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>Dimension 10 Key</td><td>int64</td><td>0</td></tr>
+<tr><td>gpb Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Return Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Net Sales Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Cost Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Gross Profit Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Discount Amount</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Discount%</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Sales Quantity</td><td>float64</td><td>0</td></tr>
+<tr><td>gpb Net Sales Quantity</td><td>float64</td><td>0</td></tr>
+</table>
+<h2>Visualizations</h2>
+<h3>chart_table_counts.png</h3>
+<img src="output/chart_table_counts.png" style="max-width:100%;height:auto;"/>
+<h3>chart_time_trend.png</h3>
+<img src="output/chart_time_trend.png" style="max-width:100%;height:auto;"/>
+<h3>chart_correlation.png</h3>
+<img src="output/chart_correlation.png" style="max-width:100%;height:auto;"/>
+<p>Generated by AI CODEFIX 2025 - Team</p>
+</body></html>
